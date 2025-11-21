@@ -71,7 +71,7 @@ This project is ready to be deployed on platforms that support Next.js, such as 
 When deploying to production, ensure that all the necessary environment variables (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, etc.) are correctly configured in the **Environment Variables settings** section of your chosen hosting platform.
 
 ## QA enviroment
-admin page: https://cost-caculator-rzmg.vercel.app/admin/materials
+admin page: https://cost-caculator-rzmg.vercel.app/admin/materials  
 user page: https://cost-caculator-rzmg.vercel.app/user/editor
 
 ## 🤝 Contributing
