@@ -23,3 +23,9 @@ export interface CostResult {
     total_material_cost_usd: number;
     total_fob_cost_usd: number;
 }
+
+export interface MaterialOption {
+    fabric_type: string;
+    unit_price_usd_per_meter: number;
+    overhead_rate_pct: number;
+}
