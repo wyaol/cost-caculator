@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Cost Calculator
 
-## Getting Started
+Welcome to **[cost-calculator]**\! This is a modern full-stack application built to [analyze and manage Bills of Materials (BOM) for cost analysis].
 
-First, run the development server:
+## ✨ Key Features
+
+  * **[Feature 1:]** Admin can create and view metarial info
+  * **[Feature 2:]** User can calculte cost by metarial info and other info
+
+## 🛠️ Tech Stack
+
+This project is built upon the following robust technology stack:
+
+| Category | Technology | Description |
+| :--- | :--- | :--- |
+| **Frontend Framework** | **Next.js** (App Router) | High-performance React framework for full-stack development. |
+| **Styling** | **[e.g., Tailwind CSS / Emotion / SCSS]** | [Describe your styling library]. |
+| **Backend/Database** | **Supabase** | An open-source Firebase alternative providing PostgreSQL, authentication, and storage. |
+| **Language** | **TypeScript** | Used for enhanced code quality and maintainability. |
+
+## 📦 Local Setup Guide
+
+Follow these steps to get your local development environment running:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/wyaol/cost-caculator.git
+cd cost-caculator
+```
+
+### 2. Install Dependencies
+
+```bash
+nvm use
+npm install
+```
+
+### 3. Configure Environment Variables (Crucial Step!)
+
+The application requires credentials to connect to the Supabase backend. Create a file named `.env.local` in the project root directory and add the following variables:
+
+> ⚠️ **IMPORTANT:** The build process (e.g., `npm run build`) requires these variables to be present, especially if your Supabase initialization logic runs during server-side rendering (SSR) or static site generation (SSG).
+
+```env
+# --- Supabase API Credentials (Required) ---
+# 1. Supabase URL (Found in Supabase > Project Settings > API)
+NEXT_PUBLIC_SUPABASE_URL="[GET YOUR PROJECT URL FROM SUPABASE]"
+
+# 2. Supabase Anon Key (Found in Supabase > Project Settings > API)
+NEXT_PUBLIC_SUPABASE_ANON_KEY="[GET YOUR ANON PUBLIC KEY FROM SUPABASE]"
+
+# 3. Private Variables (If needed for server-side API routes) ---
+# SUPABASE_SERVICE_ROLE_KEY="[KEEP THIS PRIVATE AND SERVER-ONLY]"
+```
+
+### 4. Run the Development Server
 
 ```bash
 npm run dev
-# or
+# OR
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser to `http://localhost:3000` to see the application running.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is ready to be deployed on platforms that support Next.js, such as **Vercel**.
 
-## Learn More
+When deploying to production, ensure that all the necessary environment variables (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, etc.) are correctly configured in the **Environment Variables settings** section of your chosen hosting platform.
 
-To learn more about Next.js, take a look at the following resources:
+## QA enviroment
+admin page: https://cost-caculator-rzmg.vercel.app/admin/materials
+user page: https://cost-caculator-rzmg.vercel.app/user/editor
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  * **Yao Wang** - Initial development
